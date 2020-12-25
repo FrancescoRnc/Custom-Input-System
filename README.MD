@@ -16,11 +16,14 @@ and to show what i've done to who's interested in some home made code.
 In my projects i use to handle Input Events in mevery Player Controller (-> PC for short),  
 because i follow the thinking where the Character is the puppet that gives  
 the way how it moves to the Player Controller, the brain.  
-So my idea is to Bind the Character's events to the Queue from its Blueprint in this way  
-`####`  
+So my idea is to Bind and Unbind the Character's events to and from the Queue from its Blueprint in this way  
+![I](.\Docs\BindExample.PNG)  
+![I](.\Docs\UnbindExample.PNG)  
+
 and Handle Input Events from the PC like this  
-`####`  
-by choosing from two ways:
+`(Here i used two components to handle Press and Release Events. Pretty cool)`  
+![I](.\Docs\InputHandleExample.PNG)  
+by choosing from two methods:
 * Inheriting the PC from the `MultiInputPlayerController` class;  
     or
 * Adding the `MultiInputControlComponent` to your PC;  
@@ -30,7 +33,10 @@ by choosing from two ways:
 You can easily put the files in your project by:  
 1. Cloning the 'Source' folder content inside the 'Source' folder;
 2. Changing every Class API text with the PROJECT's NAME + _API like in the example below  
-`####`  
+
+![I](.\Docs\PROJECTNAME_API_Start.PNG)  
+
+![I](.\Docs\PROJECTNAME_API_End.PNG)  
 
 ## IN CONCLUSION
 
